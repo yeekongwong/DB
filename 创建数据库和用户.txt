@@ -1,0 +1,12 @@
+create user 'hzx'@'%' identified by 'hzx@db'; 
+
+create user 'hzx'@'localhost' identified by 'hzx@db'; 
+
+create database hzx_db DEFAULT CHARSET utf8 COLLATE utf8_general_ci; 
+
+grant all privileges on `hzx_db`.* to 'hzx'@'%' identified by 'hzx@db';  
+
+grant all privileges on `hzx_db`.* to 'hzx'@'localhost' identified by 'hzx@db';  
+
+flush privileges;  
+
